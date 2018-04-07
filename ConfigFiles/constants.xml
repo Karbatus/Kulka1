@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constants>
+
+<mainMenuFrameWidth>650</mainMenuFrameWidth>
+<mainMenuFrameHeight>650</mainMenuFrameHeight>
+<gameTitle>Kulka</gameTitle>
+<playButtonText>Graj</playButtonText>
+<highScoresButtonText>Najlepsze wyniki</highScoresButtonText>
+<exitButtonText>Wyjdz</exitButtonText>
+<lifeLabelText>Życia: </lifeLabelText>
+<initialLives>5</initialLives>
+<pointsLabel>Punkty: </pointsLabel>
+<initialPoints>0</initialPoints>
+<timeLabel>Czas: </timeLabel>
+<initialTime>0</initialTime>
+<ballRadius>40</ballRadius>
+<ballColor>blue</ballColor>
+<obstacleColor>black</obstacleColor>
+<portalColor>red</portalColor>
+</constants>
+
+
