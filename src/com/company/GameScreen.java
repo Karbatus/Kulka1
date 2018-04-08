@@ -104,6 +104,7 @@ public class GameScreen extends JPanel {
         });
         f.add(new GameScreen());
         f.pack();
+        f.setLocationRelativeTo(null);
         f.setVisible(true);
     }
 

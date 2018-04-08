@@ -10,11 +10,11 @@ public class Parser {
     /**
      * Kulka z położeniem wczytanym z pliku
      */
-    private Ball ball;
+    protected Ball ball;
     /**
      * Lista, do której wczytane będą przeszkody
      */
-    private ArrayList<Obstacle> obstacles = new ArrayList<Obstacle>();
+    protected ArrayList<Obstacle> obstacles = new ArrayList<Obstacle>();
     /**
      * Portal z położeniem wczytanym z pliku
      */

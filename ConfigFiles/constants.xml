@@ -4,9 +4,9 @@
 <mainMenuFrameWidth>650</mainMenuFrameWidth>
 <mainMenuFrameHeight>650</mainMenuFrameHeight>
 <gameTitle>Kulka</gameTitle>
-<playButtonText>Graj</playButtonText>
-<highScoresButtonText>Najlepsze wyniki</highScoresButtonText>
-<exitButtonText>Wyjdz</exitButtonText>
+<playButtonText>Rozpocznij gre</playButtonText>
+<highScoresButtonText>Lista wynikow</highScoresButtonText>
+<exitButtonText>Wyjscie</exitButtonText>
 <lifeLabelText>Życia: </lifeLabelText>
 <initialLives>5</initialLives>
 <pointsLabel>Punkty: </pointsLabel>
