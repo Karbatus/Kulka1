@@ -2,6 +2,9 @@ package com.company;
 
 import java.awt.*;
 
+/**
+ * Klasa opisująca przeszkody
+ */
 public class Obstacle extends GameObject {
     /**
      * Kolor przeszkody

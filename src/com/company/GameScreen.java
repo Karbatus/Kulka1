@@ -22,19 +22,43 @@ public class GameScreen extends JPanel {
      * Wyjście z poziomu
      */
     private Portal portal;
+    /**
+     * Panel z informacjami
+     */
+    private JPanel textGUI = new JPanel();
+    /**
+     * Licznik
+     */
+    private JLabel timeLabel = new JLabel (Constants.timeLabel + Constants.initialTime);
+    /**
+     * Pole wyświetlające ilość zdobytych punktów
+     */
+    private JLabel pointsLabel = new JLabel (Constants.pointsLabel + Constants.initialPoints);
+    /**
+     * Pole wyświetlające pozostałe życia
+     */
+    private JLabel lifeLabel = new JLabel (Constants.lifeLabelText + Constants.initialLives);
 
-
+    /**
+     * Konstruktor głównego panelu gry. Przypisuje wartości zmiennym i dodaje GUI.
+     */
     public GameScreen() {
         Parser parser = new Parser();
-        if(parser.ball != null){
-            ball = parser.ball;
+        if(parser.getBall() != null){
+            ball = parser.getBall();
         }
-        if(!parser.obstacles.isEmpty()){
-            obstacles = parser.obstacles;
+        if(!parser.getObstacles().isEmpty()){
+            obstacles = parser.getObstacles();
         }
-        if(parser.portal != null){
-            portal = parser.portal;
+        if(parser.getPortal() != null){
+            portal = parser.getPortal();
         }
+        textGUI.setLayout(new BoxLayout(textGUI, BoxLayout.PAGE_AXIS));
+        textGUI.add(timeLabel);
+        textGUI.add(lifeLabel);
+        textGUI.add(pointsLabel);
+        this.add(textGUI);
+        this.setBorder(BorderFactory.createEmptyBorder(10,0,0,-500));
     }
 
     /**
@@ -72,7 +96,7 @@ public class GameScreen extends JPanel {
      *Tworzy i wyświetla GUI
      */
     public static void createAndShowGUI() {
-        JFrame f = new JFrame(Constants.gameTitle);
+        JFrame f = new JFrame();
         f.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent){
                 System.exit(0);
@@ -82,4 +106,5 @@ public class GameScreen extends JPanel {
         f.pack();
         f.setVisible(true);
     }
+
 }

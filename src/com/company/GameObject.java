@@ -1,7 +1,7 @@
 package com.company;
-
-import java.awt.Rectangle;
-
+/**
+ * Abstrakcyjna klasa opisująca parametry obiektów w grze
+ */
 public abstract class GameObject {
     /**
      * Współrzędna x obiektu

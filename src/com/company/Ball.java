@@ -2,6 +2,9 @@ package com.company;
 
 import java.awt.*;
 
+/**
+ * Klasa opisująca kulkę sterowaną przez gracza
+ */
 public class Ball extends GameObject{
     /**
      * Kolor kulki

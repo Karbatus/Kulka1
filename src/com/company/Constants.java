@@ -81,12 +81,10 @@ public final class Constants {
         parseConstantsFile();
     }
 
-    //private Constants(){}
-
     /**
      * Metoda wczytująca stałe z pliku konfiguracyjnego
      */
-    public static void parseConstantsFile(){
+    private static void parseConstantsFile(){
         try {
             File xmlFile = new File("ConfigFiles\\constants.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

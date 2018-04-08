@@ -2,6 +2,9 @@ package com.company;
 
 import java.awt.Color;
 
+/**
+ * Klasa opisująca portal - cel każdego poziomu gry
+ */
 public class Portal extends GameObject {
     /**
      * Kolor portalu

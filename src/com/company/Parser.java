@@ -3,13 +3,52 @@ package com.company;
 import java.util.*;
 import java.io.*;
 
+/**
+ * Obiekt parsujący pliki konfiguracyjne z opisem kolejnych poziomów
+ */
 public class Parser {
-    public Ball ball;
-    public ArrayList<Obstacle> obstacles = new ArrayList<Obstacle>();
-    public Portal portal;
+    /**
+     * Kulka z położeniem wczytanym z pliku
+     */
+    private Ball ball;
+    /**
+     * Lista, do której wczytane będą przeszkody
+     */
+    private ArrayList<Obstacle> obstacles = new ArrayList<Obstacle>();
+    /**
+     * Portal z położeniem wczytanym z pliku
+     */
+    private Portal portal;
 
+    /**
+     * Konstruktor klasy Parser
+     */
     public Parser(){
         loadLevelData();
+    }
+
+    /**
+     * Getter kulki
+     * @return Kulka
+     */
+    public Ball getBall(){
+        return ball;
+    }
+
+    /**
+     * Getter przeszkód
+     * @return Przeszkody
+     */
+    public ArrayList<Obstacle> getObstacles(){
+        return obstacles;
+    }
+
+    /**
+     * Getter portalu
+     * @return portal
+     */
+    public Portal getPortal(){
+        return portal;
     }
 
     /**
@@ -33,7 +72,7 @@ public class Parser {
     /**
      * Wczytuje dane o poziomie
      */
-    public void loadLevelData(){
+    private void loadLevelData(){
         Properties p = loadFile();
         for(String key : p.stringPropertyNames()){
             String values = p.getProperty(key);
